@@ -1,0 +1,65 @@
+@font-face {
+    font-family: fontequiz;
+    src: url(./fonts/LuckiestGuy-Regular.ttf );
+}
+
+body {
+    margin: 0;
+    border: 0;
+}
+
+header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    background-color: #000D10;
+    margin: 0%;
+}
+
+header h1 {
+    margin-left: 45px;
+    font-family: fontequiz;
+    font-size: 24pt;
+    color: yellow;
+}
+
+.conteudo {
+    height: calc(100vh - 90px);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: blue;
+}
+
+.hero {
+    position: absolute;
+    bottom: 300px;
+}
+
+.hero p {
+    font-size: 52pt;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+}
+
+button {
+    font-size: 20pt;
+    outline: none;
+    background-color: blueviolet;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: 100;
+    border: none;
+}
