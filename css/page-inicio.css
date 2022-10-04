@@ -1,6 +1,19 @@
+:root {
+    --green: #5AC300;
+    --black: #000D10;
+    --yellow: #F2A71B;
+    --blue: #02B9C5;
+    --backgroundcolor: #011F26;
+}
+
 @font-face {
     font-family: fontequiz;
-    src: url(./fonts/LuckiestGuy-Regular.ttf );
+    src: url(../fonts/LuckiestGuy-Regular.ttf );
+}
+
+@font-face {
+    font-family: novaflat;
+    src: url(../fonts/NovaFlat-Regular.ttf );
 }
 
 body {
@@ -13,8 +26,8 @@ header {
     justify-content: left;
     align-items: center;
     width: 100%;
-    height: 90px;
-    background-color: #000D10;
+    height: 70px;
+    background-color: var(--black);
     margin: 0%;
 }
 
@@ -22,11 +35,11 @@ header h1 {
     margin-left: 45px;
     font-family: fontequiz;
     font-size: 24pt;
-    color: yellow;
+    color: var(--yellow);
 }
 
 .conteudo {
-    height: calc(100vh - 90px);
+    height: calc(100vh - 70px);
 }
 
 main {
@@ -35,7 +48,7 @@ main {
     justify-content: center;
     align-items: center;
     height: 100%;
-    background-color: blue;
+    background-color: var(--backgroundcolor);
 }
 
 .hero {
@@ -44,7 +57,9 @@ main {
 }
 
 .hero p {
-    font-size: 52pt;
+    font-size: 56pt;
+    font-family: fontequiz;
+    color: var(--yellow);
 }
 
 .botoes {
@@ -58,8 +73,23 @@ button {
     font-size: 20pt;
     outline: none;
     background-color: blueviolet;
-    border-radius: 20px;
-    padding: 10px;
+    border-radius: 10px;
+    width: 109px;
+    height: 45px;
+    font-family: novaflat;
     font-weight: 100;
     border: none;
+    cursor: pointer;
+}
+
+button:nth-child(1) {
+    background-color: var(--blue);
+}
+
+button:nth-child(2) {
+    background-color: var(--green);
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, .1);
 }
