@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    z-index: hidden;
+    overflow-x: hidden;
+}
+
+main h1 {
+    font-family: lobster;
+    font-size: 36pt;
+    color: var(--white);
+    font-weight: 100;
+}
+
+.opcoes-txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 50px;
+}
+
+.opcoes-txt:nth-child(1) {
+    color: var(--white);
+}
+
+.opcoes-txt:nth-child(2) {
+    color: var(--yellow);
+}
+
+.botoes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 50%;
+    height: 25px;
+}
+
+.botoes button {
+    width: 170px;
+    height: 40px;
+    border: 2px solid var(--blue);
+    border-radius: 10px;
+    background-color: transparent;
+    font-family: lobster;
+    color: var(--neutral);
+    font-size: 18pt;
+}
