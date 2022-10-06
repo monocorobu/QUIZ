@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.janela-flutuante {
+    display: grid;
+    width: 80%;
+    height: 600px;
+    background-color: aquamarine;
+}

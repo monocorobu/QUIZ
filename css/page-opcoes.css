@@ -12,7 +12,8 @@ main h1 {
     font-weight: 100;
 }
 
-.opcoes-txt {
+.opcoes-perguntas,
+.opcoes-min {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,11 +22,15 @@ main h1 {
     padding: 50px;
 }
 
-.opcoes-txt:nth-child(1) {
+.opcoes-perguntas {
+    padding-top: 0px;
+}
+
+.opcoes-perguntas h1 {
     color: var(--white);
 }
 
-.opcoes-txt:nth-child(2) {
+.opcoes-min h1 {
     color: var(--yellow);
 }
 
@@ -38,7 +43,7 @@ main h1 {
     height: 25px;
 }
 
-.botoes button {
+.botoes input {
     width: 170px;
     height: 40px;
     border: 2px solid var(--blue);
@@ -47,4 +52,33 @@ main h1 {
     font-family: lobster;
     color: var(--neutral);
     font-size: 18pt;
+    cursor: pointer;
+}
+
+.botoes input:hover {
+    background-color: rgba(255, 255, 255, .2);
+    color: #faf5db;
+}
+
+.doar {
+    position: absolute;
+    top: calc(100% - 10%);
+    left: calc(100% - 90%);
+}
+
+.doar input {
+    width: 95px;
+    height: 30px;
+    font-family: novaflat;
+    font-weight: 100;
+    border: none;
+    cursor: pointer;
+    background-color: var(--blue);
+    border-radius: 10px;
+    font-size: 15pt;
+    outline: none;
+}
+
+.doar input:hover {
+    background-color: rgba(0, 255, 0, .9);
 }
