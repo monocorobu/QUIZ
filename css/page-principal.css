@@ -1,11 +1,112 @@
+.no-select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 body {
     margin: 0;
     padding: 0;
 }
 
 .janela-flutuante {
-    display: grid;
+    position: absolute;
     width: 80%;
+    max-width: 1600px;
     height: 600px;
-    background-color: aquamarine;
+    background-color: #000D10;
+}
+
+.header__Quiz {
+    position: relative;
+    border-bottom: 2px solid #011F26;
+    height: 10%;
+}
+
+.main__Quiz {
+    position: relative;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    height: 90%;
+    margin: 10px 40px 0px 40px;
+}
+
+.container__1 {
+    height: calc(100% - 10px);
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.container__1 h1 {
+    font-size: 16pt;
+    color: var(--white);
+    font-family: shippor;
+    width: 100%;
+    height: 130px;
+    margin: 0;
+}
+
+.respostas ul {
+    list-style: none;
+    padding: 0;
+}
+
+.respostas li {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    margin: 20px;
+    margin-left: 0;
+    border: 5px solid #011F26;
+    height: 40px;
+}
+
+.respostas li:hover {
+    border: 5px solid #047b96;
+}
+
+.respostas li input {
+    all: unset;
+    width: 20px;
+    height: 20px;
+    margin: 15px;
+    background-color: transparent;
+    border: 3px solid #011F26;
+    border-radius: 100%;
+}
+
+.respostas li input:checked {
+    background-color: green;
+}
+
+.respostas label {
+    cursor: pointer;
+    width: 100%;
+    color: var(--white);
+    font-family: novaflat;
+    font-size: 20pt;
+    padding: 11px 0px 11px 0px;
+}
+
+.next__buton input {
+    background-color: var(--yellow);
+    width: 200px;
+    height: 50px;
+    font-family: fontequiz;
+    font-size: 15pt;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #946713;
+}
+
+.next__buton input:active {
+    background-color: #ebbe6c;
+    box-shadow: -1px -1px 1px #946713;
+}
+
+.rodape_container__1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }

@@ -23,6 +23,11 @@
     src: url(../fonts/Lobster-Regular.ttf );
 }
 
+@font-face {
+    font-family: shippor;
+    src: url(../fonts/ShipporiAntique-Regular.ttf );
+}
+
 header {
     display: flex;
     justify-content: left;
