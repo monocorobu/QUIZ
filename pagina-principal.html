@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/cabecalho.css">
     <link rel="stylesheet" href="./css/page-principal.css">
+
     <title>QUIZ</title>
 </head>
 
@@ -26,29 +27,30 @@
                     </div>
                     <div class="main__Quiz">
                         <div class="container__1">
-                            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta fuga sunt expedita libero unde. Ipsa et fugiat, magnam sapiente eligendi quos lore.</h1>
+                            <h1 id="pergunta"></h1>
+                            <p id="demo">Click me to change my HTML content (innerHTML).</p>
                             <div class="respostas">
                                 <ul>
                                     <li>
                                         <input type="checkbox" name="check1" id="check1" class="check">
-                                        <label for="check1">Resposta 1</label>
+                                        <label for="check1" id="labelcheck1">Resposta 1</label>
                                     </li>
                                     <li>
                                         <input type="checkbox" name="check2" id="check2" class="check">
-                                        <label for="check2">Resposta 2</label>
+                                        <label for="check2" id="labelcheck2">Resposta 2</label>
                                     </li>
                                     <li>
                                         <input type="checkbox" name="check3" id="check3" class="check">
-                                        <label for="check3">Resposta 3</label>
+                                        <label for="check3" id="labelcheck3">Resposta 3</label>
                                     </li>
                                     <li>
                                         <input type="checkbox" name="check4" id="check4" class="check">
-                                        <label for="check4">Resposta 4</label>
+                                        <label for="check4" id="labelcheck4">Resposta 4</label>
                                     </li>
                                 </ul>
                                 <div class="rodape_container__1">
-                                    <div class="tempo"></div>
-                                    <div class="next__buton"><input type="button" value="PROXIMA QUESTÃO"></div>
+                                    <div class="tempo" id="tempo"></div>
+                                    <div class="next__buton" id="botao_prox"><input type="button" value="PROXIMA QUESTÃO"></div>
                                 </div>
                             </div>
                         </div>
@@ -56,6 +58,7 @@
                 </section>
             </main>
         </section>
+        <script src="./js/index.js"></script>
     </body>
 
 </html>
